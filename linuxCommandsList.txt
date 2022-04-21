@@ -47,3 +47,14 @@ rm - removes a file or directory
         apropos - used to search man pages. EX. apropos floppy
         what is - gives a short description of the command
         info - gives a detailed description of the command
+        http://tips.dataexpedition.com/1man.html
+
+6. CREATE YOUR OWN COMMAND WITH ALIAS
+    - you can put more than one command on the same line by separating them with a ';'. EX. cd /usr; ls; cd -
+    alias - lets you create a command by stringing together other commands
+        EX. alias foo='cd /usr; ls; cd -'
+            - foo being the created command
+        - alias commands won't save once the terminal is closed
+        - if you want to to save it, you have to edit the .bashrc file, which is a customization file where you can store your aliases and potentially transfer them to another machine to use
+            nano .bashrc - opens up the .bashrc file in a terminal text editor, nano
+    unalias - deletes a given alias
