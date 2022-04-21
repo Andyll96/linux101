@@ -81,3 +81,7 @@
         - /dev/null is a concept in unix where it throws all the bits in a bucket and does nothing with them
 
 9. USING CAT WITH STANDARD INPUTS
+    cat - stands for concatenate. Reads one or more files and copies them to stdout. EX. cat ls-output.txt
+        - you can also use cat to join multiple files. EX. cat hak5.mpeg.0* > hak5.mpeg
+    
+10. GREP AND PIPES
