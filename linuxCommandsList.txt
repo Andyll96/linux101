@@ -42,4 +42,8 @@ rm - removes a file or directory
     which - where the command lives on the system, but won't work for built ins or alias commands that're subsititue for actual executables
     help - gives more info about command
         --help - displays the commands supported syntax and some options. EX. mkdir --help
-        
+    man - manual page for commands
+        - the manual has 8 sections that can be searched. EX. man 5 passwd, looks at the areas in section 5 for passwd
+        apropos - used to search man pages. EX. apropos floppy
+        what is - gives a short description of the command
+        info - gives a detailed description of the command
