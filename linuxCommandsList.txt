@@ -1,19 +1,19 @@
 1. GETTING STARTED
-date - pulls up current date
-cal - pulls up calendar
-df - free disk space
-free - free memory amount
-pwd - shows current directory
-ls - lists files and directories
-man - type man, then a command and it'll pull up the description and available options/ flags for that command
+    date - pulls up current date
+    cal - pulls up calendar
+    df - free disk space
+    free - free memory amount
+    pwd - shows current directory
+    ls - lists files and directories
+    man - type man, then a command and it'll pull up the description and available options/ flags for that command
 
 2. FILE MANIPULATION
-file - shows file type
-less - views text file minmally (hit 'q' to exit)
-mkdir - creates folder
-cp - copies file into given directory or into the same directory with a given new name
-mv - moves a file into a given directory or renames it given a secondary name
-rm - removes a file or directory
+    file - shows file type
+    less - views text file minmally (hit 'q' to exit)
+    mkdir - creates folder
+    cp - copies file into given directory or into the same directory with a given new name
+    mv - moves a file into a given directory or renames it given a secondary name
+    rm - removes a file or directory
 
 3. WILDCARDS, HARD LINKS, & SYMBOLIC LINKS
     Wildcards - group of special characters used to specify a big group of file names, also called globbing 
@@ -67,3 +67,17 @@ rm - removes a file or directory
     > - lets you redirect output to a file. EX. ls -l /usr/bin > ls-output.txt
         - when you do this for a non-existant directory, it'll output an error message to the terminal and not into the txt file
     >> - appends to the output instead of overwriting it. EX. ls -l /usr/bin >> ls-output.txt
+
+8. REDIRECTING STANDARD TERMINAL ERRORS IN LINUX
+    - the linux shell refers to 
+        - standard input (stdin < 0)
+        - standard output (stdin < 1)
+        - standard error (stdin < 2)
+    - therefore we can redirect error messages. EX. ls -l /bin/usr 2> ls-error.txt
+    - to redirect output and error messages into same file. EX. ls -l /bin/usr > ls-output.txt 2>&1
+        - always put the error redirection at the end of the command
+    - the new method of doing the above. EX. ls -l /bin/usr &> ls-output.txt
+    - to get rid of the error messages. EX. ls -l /bin/usr 2> /dev/null
+        - /dev/null is a concept in unix where it throws all the bits in a bucket and does nothing with them
+
+9. USING CAT WITH STANDARD INPUTS
