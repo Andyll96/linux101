@@ -58,3 +58,12 @@ rm - removes a file or directory
         - if you want to to save it, you have to edit the .bashrc file, which is a customization file where you can store your aliases and potentially transfer them to another machine to use
             nano .bashrc - opens up the .bashrc file in a terminal text editor, nano
     unalias - deletes a given alias
+
+7. I/O REDIRECTION OF STANDARD OUTPUTS
+    - lets you redirect the input and output of commands to and from files and also lets you connect multiple command pipelines
+    - all programs in terminal give an output (result or status error message), which sends the result to a file called 'standard output (stdout)' and messages to 'standard error (stderr)'
+        - by default they're not saved to disk
+        - the keyboard is tied to 'standard input (stdin)'
+    > - lets you redirect output to a file. EX. ls -l /usr/bin > ls-output.txt
+        - when you do this for a non-existant directory, it'll output an error message to the terminal and not into the txt file
+    >> - appends to the output instead of overwriting it. EX. ls -l /usr/bin >> ls-output.txt
