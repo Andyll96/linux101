@@ -1,0 +1,45 @@
+1. GETTING STARTED
+date - pulls up current date
+cal - pulls up calendar
+df - free disk space
+free - free memory amount
+pwd - shows current directory
+ls - lists files and directories
+man - type man, then a command and it'll pull up the description and available options/ flags for that command
+
+2. FILE MANIPULATION
+file - shows file type
+less - views text file minmally (hit 'q' to exit)
+mkdir - creates folder
+cp - copies file into given directory or into the same directory with a given new name
+mv - moves a file into a given directory or renames it given a secondary name
+rm - removes a file or directory
+
+3. WILDCARDS, HARD LINKS, & SYMBOLIC LINKS
+    Wildcards - group of special characters used to specify a big group of file names, also called globbing 
+        * - match any character with your query 
+        ? - match any single character
+        [abc] - specifies a range. If you did m[a,o,u]m it can become: mam, mum, mom if you did: m[a-d]m it can become anything that starts and ends with m and has any character a to d inbetween. For example, these would work: mam, mbm, mcm, mdm. This kind of wildcard specifies an “OR” relationship (you only need one to match).
+        [!abc] - matches any other characters that're not in the brackets
+    Links - ln command lets you create hard and symbolic Links. EX. ln pic picshortcut EX. ln -s pic picshortcut
+        hardlink - original way of creating links, every file has one and it's what gives the file it's name. Creates an additional directory entry for a file but can't work outside it's own file system and can't reference a directory
+        symbolic link - more modern and favourable version of links, it's like a windows shortcut
+
+4. FILENAMES, HISTORY AND SHORTCUTS
+    - there is a maximum filename length for any given file (255 characters)
+    - filenames are case sensitive
+    - specific characters will confuse terminal (/)
+    history - lets you view your past commands for the past 500 lines
+        - you can pipe with "less" command to see history page by page
+        !! - lets you run the last command 
+        !(history num) - lets you run the command specified by it's index in the history. EX. !499, runs line 499 from history
+        - you can also hit the up button on the keyboard to go to previous commands
+        - pressing tab, autocompletes 
+
+5. TYPE, WHICH, AND APROPOS
+    - a command is an executable program, a built in shell command, a shell function, or alias (a command we define using other commands)
+    type - gives the type of a command
+    which - where the command lives on the system, but won't work for built ins or alias commands that're subsititue for actual executables
+    help - gives more info about command
+        --help - displays the commands supported syntax and some options. EX. mkdir --help
+        
