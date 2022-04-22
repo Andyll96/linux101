@@ -117,3 +117,10 @@
     - using double quotes around the name of a text document will fix any errors involving filenames with spaces. It makes any special characters lose their meaning except for `, \, and $
     - single quotes can supress the expansion even farther than double quotes
     - special characters are escaped by \. EX. echo "this costs \$10.00"
+
+14. YOUR FAVOURITE TIPS AND TRICKS
+    - If a command has been aliased, and you want to run the un-aliased version of the command, you must put a back slash before the command.
+        EX. alias ls="ls -l"
+        ls /usr/bin
+        \ls /usr/bin
+    - press ctrl+r while in the terminal to reverse search your history. Write in a substring of the previous command you're looking for in your history and it will appear
