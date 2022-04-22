@@ -124,3 +124,12 @@
         ls /usr/bin
         \ls /usr/bin
     - press ctrl+r while in the terminal to reverse search your history. Write in a substring of the previous command you're looking for in your history and it will appear
+
+15. MY TOP BEST RESOURCES
+    - www.commandlinefu.com
+    - files.fosswire.com/2007/08/fwunixref.pdf
+    - The Linux Command Line: A Complete Introduction (Book)
+    - Ubuntu for Non Geeks (Book)
+    - Linux Pocket Guide (Book)
+    - Working at the Ubuntu Command Line Prompt (Book)
+    - Ubuntu Made Easy (Book)
