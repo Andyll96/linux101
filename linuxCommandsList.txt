@@ -98,3 +98,17 @@
     - 'expansion' a concept related to the * wildcard, where it expands and fills in the gap of the wildcard
         ~ - expands to the home directory
         $((math expression)) - allows you to write math expressions with whole numbers
+
+12. USING EXPANSIONS COMMANDS IN THE LINUX TERMINAL PART 2
+    {} - Brace Expansion, can make several text strings out of one pattern with braces around them
+        EX. echo Number_{1..5}
+        EX. echo LETTER_{Z..A}
+        EX. echo a{A{1,2}, B{3,4}}b
+        EX. mkdir {2009..2011}-0{1..9}{2009..2011}-{10..12}
+    - you can also expand parameters 
+        - echo $USER
+    printenv - shows a list of available variables
+    - the output of a command can also be used as an expansion, which in turn will act as an argument for a command
+        EX. echo $(ls)
+        EX. ls -l $(which cp)
+        - an older / shorter alternative EX. ls -l `which cp`
