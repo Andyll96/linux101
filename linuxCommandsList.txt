@@ -112,3 +112,8 @@
         EX. echo $(ls)
         EX. ls -l $(which cp)
         - an older / shorter alternative EX. ls -l `which cp`
+
+13. THE IMPORTANCE OF QUOTES IN THE TERMINAL
+    - using double quotes around the name of a text document will fix any errors involving filenames with spaces. It makes any special characters lose their meaning except for `, \, and $
+    - single quotes can supress the expansion even farther than double quotes
+    - special characters are escaped by \. EX. echo "this costs \$10.00"
