@@ -85,3 +85,11 @@
         - you can also use cat to join multiple files. EX. cat hak5.mpeg.0* > hak5.mpeg
     
 10. GREP AND PIPES
+    stdout | stdin - allows you to redirect the output of a command into the input of another command. EX. ls -l usr/bin | less
+        - using several commands together using pipes are called filters. EX. ls /bin /usr/bin | sort | unique | less
+        unique - only shows stdin without any duplicates
+        wc - shows line, word, and byte count
+    grep - finds patterns in texts. EX. history | grep 'ls'
+    head - shows the first 10 or otherwise specified number of lines of the file
+    tail- the same as head but at the end of the file
+    tee - copies two outputs or multiple files at the same time
