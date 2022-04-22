@@ -34,7 +34,7 @@
         !! - lets you run the last command 
         !(history num) - lets you run the command specified by it's index in the history. EX. !499, runs line 499 from history
         - you can also hit the up button on the keyboard to go to previous commands
-        - pressing tab, autocompletes 
+    - pressing tab, autocompletes 
 
 5. TYPE, WHICH, AND APROPOS
     - a command is an executable program, a built in shell command, a shell function, or alias (a command we define using other commands)
@@ -145,3 +145,13 @@
     - alt+u : uppercase (check to see if still works)
     - ctrl+k : deletes everything on the right of the cursor
     - ctrl+u : deletes everything on the left of the cursor
+
+17. HOW TO USE HISTORY
+    history - lets you view your past commands for the past 500 lines
+        - you can pipe with "less" command to see history page by page
+        !! - lets you run the last command 
+        !(history num) - lets you run the command specified by it's index in the history. EX. !499, runs line 499 from history
+        - you can also hit the up button on the keyboard to go to previous commands
+        ctrl+p & ctrl+n : lets you move back and forth on the history list
+        alt+> & alt+< : lets you move to the begininng and end of the list
+        
