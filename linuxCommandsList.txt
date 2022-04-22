@@ -93,3 +93,8 @@
     head - shows the first 10 or otherwise specified number of lines of the file
     tail- the same as head but at the end of the file
     tee - copies two outputs or multiple files at the same time
+
+11. HOW TO USE ECHO
+    - 'expansion' a concept related to the * wildcard, where it expands and fills in the gap of the wildcard
+        ~ - expands to the home directory
+        $((math expression)) - allows you to write math expressions with whole numbers
