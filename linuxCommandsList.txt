@@ -133,3 +133,15 @@
     - Linux Pocket Guide (Book)
     - Working at the Ubuntu Command Line Prompt (Book)
     - Ubuntu Made Easy (Book)
+
+16. TYPING LESS WITH KEYBOARD SHORTCUTS
+    - ctrl+a : moves cursor to beginning of the line
+    - ctrl+e : moves cursor to end of the line
+    - ctrl+b : moves cursor to the left by one character
+    - ctrl+f : moves cursor to the right by one character
+    - ctrl+d : delete character to the right (delete button on keyboard)
+    - ctrl+t : shift letter to the right 
+    - alt+l : lowercase (check to see if still works)
+    - alt+u : uppercase (check to see if still works)
+    - ctrl+k : deletes everything on the right of the cursor
+    - ctrl+u : deletes everything on the left of the cursor
