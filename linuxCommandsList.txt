@@ -213,3 +213,22 @@
                 l : multi-threaded
         ps aux - gives even more information like user id, cpu and memory usage, Virtual memory size (VSZ), physical memory used / resident set size (RSS), when the process started (START)
         top - a dynamic view of the processes
+
+21. CONTROLLING PROCESSES
+    gedit - text editor, when running this command terminal will not let you continue until gedit is closed.
+    gedit & - allows you to start it as a job. Terminal will give you the job number and PID
+    jobs - shows the jobs that're running 
+    fg - brings a job back into the foreground where the program runs in the terminal and where you need to close the program to use the terminal again.
+        EX. fg %1, brings job 1 to the foreground
+    bg - brings a process to the background
+    Ctrl+c - terminates a program
+    Ctrl+z - to completely stop a process
+    kill - given a PID, the command will kill the process by sending a signal to the process to terminate it. It can have specified signals attatched to it. HUP (hangup), int (interrupt), term (terminate), stop (stopping the process without terminating), cont (continuing after stopping)
+    kill -l : gives you all the signals you can send
+    killall : kills all processes given the program
+        EX. killall gedit
+    - you must have user previlages to do all this
+    pstree - gives all the relationships between processes and sub processes in the form of a tree
+    vmstat - system resouce usage
+    xload - system load graph
+    tload - shows system load graph in the terminal
