@@ -154,4 +154,33 @@
         - you can also hit the up button on the keyboard to go to previous commands
         ctrl+p & ctrl+n : lets you move back and forth on the history list
         alt+> & alt+< : lets you move to the begininng and end of the list
-        
+
+18. HOW TO USE PERMISSIONS
+    - linux computers can be used by more than one person at the same time. Multiple people in different locations can work on the same machine at the same time.
+    - linux allows certain users to do certain things. Permissions
+    - Users can "own" or belong to a "group" that has permissions to access files by the owner. The owner can also grant access to the "world" or everyone and they can check your identity using the id command
+    id - this command will give you your identity
+    /etc/passwd - a file that shows the user accounts
+    /etc/group - shows the group information. The shadow file, found in the same directory, holds information on the users password
+    permissions - by using ls -l, the first 10 characters reveal the level of permission assigned to each file
+        - the first character is the file type, the other 9 are read, write, and execute permissions for the files owner, group and world
+        - for the first character
+            - : means a regular file
+            d : directory
+            l : symbolic link
+            c : character special file (terminal or modem)
+            b : block special file (hard drive)
+        - the first 3 numbers are for the owner, then the next 3 are for the group, then the last 3 are for the world
+    chmod - allows the owner of a file to change permissions. There are two ways of using this command using octal representation
+        EX. 
+            6 = 110 octal = rw- permission
+            7 = 111 octal = rwx permission
+            3 = 011 octal = -wx permission
+            0 = 000 octal = --- permission
+        EX. chmod 600 example.txt : -rw-------
+    or symbolic notation
+        EX.
+            a : all
+            o : others or world
+            g : group owner
+            u : user owner
