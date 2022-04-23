@@ -232,3 +232,18 @@
     vmstat - system resouce usage
     xload - system load graph
     tload - shows system load graph in the terminal
+
+22. VIEWER TIPS! PID, HISTORY, AND MORE!
+    - kill any stopped jobs
+        jobs -l
+        kill -9 *PID number*
+    - get timestamps for history
+        sudo gedit /etc/bash.bashrc
+        - look for shopt -s
+        - right under this line you find, type in under it: export HISTTIMEFORMAT="%a %b %d - %r "
+        - restart terminal
+        - type history
+
+53. VIEWER TIPS PART 2
+    uname -r - shows what version of kernel you're running
+    cat /etc/*release - shows what version on distro you're running
