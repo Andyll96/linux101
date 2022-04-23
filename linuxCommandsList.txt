@@ -184,3 +184,16 @@
             o : others or world
             g : group owner
             u : user owner
+
+19. HOW TO CHANGE YOUR IDENTITY
+    - There are three ways you can change your identity 
+        - log back out and log in as another user
+        su - lets you start a new shell session as that user or you can issue a single command as that one
+            EX. su [-[l]] [user], the -l will create a login shell for that user
+            EX. su - , this lets you login as super/root user and it'll ask you to enter the password. You can also use sudo for this if you don't have the password, but you'll need to add a password. Remember to type "exit" after the session
+            EX. su -c 'ls -l example.txt', runs one command as super  user
+        sudo - can define specific commands that a user can use 
+            EX. sudo -l, shows you what previlages you currently have
+    chown - change owner or group owner
+        EX. chown [owner] [:[group]] file...
+    passwd - allows you to change the current password
