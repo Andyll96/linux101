@@ -197,3 +197,19 @@
     chown - change owner or group owner
         EX. chown [owner] [:[group]] file...
     passwd - allows you to change the current password
+
+20. HOW TO VIEW PROCESSES
+    - linux can multitask, just like any operating system, using processes. An organizational tool used to decide what programs can use the cpu at what time. 
+    - on boot up, the kernel starts some processes labeled as init scripts which start other services called daemon programs. These programs just hang in the background. Parent processes can launch other programs called child processes
+    - all processes are organized with a process id (PID) with init being PID 1. Processes also have owners like files do
+        ps - allows you to view processes associated with your terminal. The coloumns show the Process ID (PID), Teletype, the controlling terminal of the process (TTY), the time that the process uses the cpu (TIME), the current command (CMD)
+        ps x - tells ps to show all process, not just in the terminal
+            - a ? under TTY means that there is no terminal associated
+            - STAT stands for status of the process
+                R : running
+                S : sleeping
+                T : stopped
+                N : low priority 
+                l : multi-threaded
+        ps aux - gives even more information like user id, cpu and memory usage, Virtual memory size (VSZ), physical memory used / resident set size (RSS), when the process started (START)
+        top - a dynamic view of the processes
